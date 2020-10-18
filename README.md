@@ -29,6 +29,6 @@ Return the total number of matching pairs of socks that Rohit can sell.
  10 10 10 10 20 30 30 30 30 30 30 30 40 40 40 40 40 
 
 
-##Sample Output 
+## Sample Output 
 
 7 
