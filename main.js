@@ -12,22 +12,6 @@ function sortAndCount( n, arr ) {
     return pairs;
 }
 
-
-function stockAndCount( n, arr ) {
-    let pairs = 0;
-    const colors = arr.reduce((acc, val) => {
-        (!!acc[val]) ? acc[val] += 1 : acc[val] = 1;
-        return acc;
-    }, {});
-  
-    Object.keys(colors).forEach( n => {
-        let _pair = parseInt( colors[n] / 2);
-        if ( _pair >= 1 ) pairs += _pair;
-    });
-
-    return pairs;
-}
-
 const n = 17;
 const socks = [ 10,10,10,10,20,30,30,30,30,30,30,30,40,40,40,40,40];
 
@@ -35,8 +19,4 @@ console.clear();
 
 console.group('Sorted and counted');
     console.log(`There is a total of ${sortAndCount(n, socks)} pairs`);
-console.groupEnd();
-
-console.group('Stocked and counted');
-    console.log(`There is a total of ${stockAndCount(n, socks)} pairs`);
 console.groupEnd();
