@@ -29,7 +29,7 @@ function stockAndCount( n, arr ) {
 }
 
 const n = 17;
-const socks = [1,1,1,1,2,3,3,3,3,3,3,3,4,4,4,4,4];
+const socks = [ 10,10,10,10,20,30,30,30,30,30,30,30,40,40,40,40,40];
 
 console.clear();
 
